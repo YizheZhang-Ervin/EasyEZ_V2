@@ -1,0 +1,181 @@
+{% extends "header.html" %}
+{% load static %}
+{% block title %}Introduction{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div id="main001">
+                <br>
+                <!-- Title -->
+                <h4 id="p0">My Websites</h4>
+                <hr class="bg-dark" style="border:1px solid">
+                <a href="/resume/en/" class="ws">&gt; Personal Website &nbsp;(Django)</a>
+                <h5 class="pi">&nbsp;&nbsp;&nbsp;&nbsp;Personal Introduction and Experience</h5>
+                <a href="https://bea-analysis.herokuapp.com/" class="ws">&gt; BEA-Gold Visualization System &nbsp;(Tornado)</a>
+                <h5 class="pi">&nbsp;&nbsp;&nbsp;&nbsp;Gold Visualization different format plots </h5>
+                <a href="https://fin-analysis.herokuapp.com/" class="ws">&gt; NIA7-Financial Analysis System &nbsp;(Flask)</a>
+                <h5 class="pi">&nbsp;&nbsp;&nbsp;&nbsp;More Financial Products analysis(developing)</h5>
+                <p></p>
+                <p></p>
+                <br>
+                <!-- summary -->
+                <h4 id="p1">Summary</h4>
+                <hr class="bg-dark" style="border:1px solid">
+                <p>Software engineer enthusiast with years of learning experience in system design, development, and innovation. Proficient in both Front-end/Back-end web technologies and software design process.</p>
+                <p>Quick learner, proactive, adaptable, organized and a team player is seeking a Full-Stack Engineer Co-op (Intern) to utilize my technical and interpersonal skills.</p>
+                <br>
+                <!-- skills -->
+                <h4 id="p2">Skills</h4>
+                <hr class="bg-dark" style="border:1px solid">
+                <details style="margin:0 auto " open=""><summary><b>Programming Languages</b></summary><a target="_blank" href="/">Python</a>, Java, SQL</details>
+                <details style="margin:0 auto " open=""><summary><b>Web Technologies</b></summary>HTML/CSS, HTML5/CSS3, SCSS, JavaScript, TypeScript, Axure RP, Bootstrap, Angular</details>
+                <details style="margin:0 auto " open=""><summary><b>Back-End</b></summary>Django, Tornado, Flask, Express(node.js)</details>
+                <details style="margin:0 auto " open=""><summary><b>Databases</b></summary>MS SQL Server, Oracle, SQLite, MySQL, PostgreSQL, MongoDB</details>
+                <details style="margin:0 auto " open=""><summary><b>Operation Systems</b></summary>Windows, Linux (Ubuntu, CentOS)</details>
+                <details style="margin:0 auto " open=""><summary><b>BI Tools</b></summary>Power BI, SSIS/SSAS/SSRS, SPSS, R, Data Warehousing, pyecharts</details>
+                <details style="margin:0 auto " open=""><summary><b>Other Tools</b></summary>Office Word/Excel/PPT/VISIO, Git</details>
+                <details style="margin:0 auto " open=""><summary><b>Multimedia Tools</b></summary>Corel VideoStudio, PhotoShop, Adobe Flash, Adobe Audition</details>
+                <br>
+                <!-- education -->
+                <h4 id="p3">Education</h4>
+                <hr class="bg-dark" style="border:1px solid">
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><strong>Northeastern University, Boston, MA</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;2019 - Present</summary>
+                    <a target="_blank" href="https://www.northeastern.edu/"><embed src="{% static 'img/neu.jpg'%}"></a>
+                    <p class="line-short">Master of Science in Information Systems</p>
+                    <p class="line-short">Relevant Courses: Application Engineering, Database, Data Science, Web Design</p>
+                </details>
+                <br>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><strong>University of California, Los Angeles, CA</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;2017</summary>
+                    <a target="_blank" href="http://www.ucla.edu/"><embed src="{% static 'img/ucla.jpg'%}"></a>
+                    <p class="line-short">Certificate of International Business &amp; Leadership Management</p>
+                    <p class="line-short">Relevant Courses: Application Engineering, Database, Data Science, Web Design</p>
+                </details>
+                <br>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><strong>Nantong University, Nantong, Jiangsu, China</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;2015 - 2019</summary>
+                    <a target="_blank" href="http://www.ntu.edu.cn/"><embed src="{% static 'img/ntu.jpg'%}"></a>
+                    <p class="line-short">Bachelor of Management in Information Management and Information System</p>
+                    <p class="line-short"><b>Computer Science Courses:</b> Oracle, Software Engineering, Data Structure, Computer Network, Operating System</p>
+                    <p class="line-short"><b>Economics Courses:</b> Economics, Information Economics, Information Analysis, financial management, Accountancy</p>
+                    <p class="line-short"><b>Data Courses:</b> Database, Data Warehousing and Data Mining, SPSS, Statistics, Information Analysis</p>
+                </details>
+                <br>
+                <!-- projects -->
+                <h4 id="p4">Projects</h4>
+                <hr class="bg-dark" style="border:1px solid">
+                <h4>BEA-GVS</h4>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>Gold Visualization System (Mar 2020 - Present) - Tornado</b></summary>
+                    <p>$ Analyzed short-term gold data with Moving average / exponential smoothing directly via Quandl API</p>
+                    <p>$ ETL gold data(2008-Now) and stored in Mysql for long term investment model  </p>
+                    <p>$ Plotted gold data in form of 2D/3D/Animation/DIY Trend Chart</p>
+                    <p>$ Extended the core part of PFAS and improved efficiency by Asynchronous server</p>
+                </details>
+                <a target="_blank" href="https://bea-analysis.herokuapp.com/"><embed src="{% static 'img/bea-gvs.jpg'%}"></a>
+                <br><br>
+                <h4>PFAS</h4>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>Personal Website with embedded PFAS (Feb 2020 - Present) - Django</b></summary>
+                    <p>$ Created Django personal website, and embedded Python Financial Analysis System which plots the gold price trend in different forms</p>
+                    <p>$ Built exquisite user interface &amp; front-end by bootstrap, html/css, javascript</p>
+                    <p>$ Embedded in<a href="/pfas/"> this website</a> with Mysql by Pythonanywhere Server platform</p>
+                </details>
+                <a target="_blank" href="/pfas/"><embed src="{% static 'img/pfas.jpg'%}"></a>
+                <br><br>
+                <h4>SPA</h4>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>Sample Single Page Application (Jan 2020 - Present)</b></summary>
+                    <p>$ Designed single page web with HTML,CSS,Javascript </p>
+                    <p>$ Dynamically updated page by JS when users interact with the application</p>
+                </details>
+                <a target="_blank" href="/spa/"><embed src="{% static 'img/spa.jpg'%}"></a>
+                <br><br>
+                <h4>HDS</h4>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>Hotel Database System (Sept 2019 - Dec 2019)</b></summary>
+                    <p>$ Developed GUI and database with 18 entities for processing and storing customers’ information and behavior</p>
+                    <p>$ Analyzed customers’ preference by Power BI in order to improve hotel service (room type, meal service,etc)</p>
+                </details>
+                <a target="_blank" href="https://github.com/YizheZhang-Ervin/DesktopAppDevelop"><embed src="{% static 'img/hds.jpg'%}"></a>
+                <br><br>
+                <h4>HIS</h4>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>Hospital Information System (Sept 2019 - Dec 2019)</b></summary>
+                    <p>$ Developed a system for interaction between medicine suppliers, hospitals, patients and medical insurance</p>
+                </details>
+                <a target="_blank" href="https://github.com/YizheZhang-Ervin/DesktopAppDevelop"><embed src="{% static 'img/his.jpg'%}"></a>
+                <br><br>
+                <h4>GUESS</h4>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>Gamification Used by Exploratory Search System (Sept 2018 - Jun 2019)</b></summary>
+                    <p>$ Completed an Excellent Research Essay &amp; initiated Prototype-GUESS  with 11 game modules embedded in 20 visual interfaces in order to improve users' utilization of an exploratory search system</p>
+                </details>
+                <a target="_blank" href="http://www.linkedin.com/in/yizhe-zhang"><embed src="{% static 'img/guess.jpg'%}"></a>
+                <br><br>
+                <!-- certificates -->
+                <h4 id="p5">Certificates</h4>
+                <hr class="bg-dark" style="border:1px solid">
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>Python 3</b></summary>
+                    <p><b>SoloLearn (Issued 27 December, 2019)</b></p>
+                    <a target="_blank" href="http://www.linkedin.com/in/yizhe-zhang"><embed src="{% static 'img/python3.jpg'%}"></a>
+                </details>
+                <br>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>BI Developer</b></summary>
+                    <p><b>Udemy (Issued 8 November,2019)</b></p>
+                    <a target="_blank" href="http://www.linkedin.com/in/yizhe-zhang"><embed src="{% static 'img/bi.jpg'%}"></a>
+                </details>
+                <br>
+                <details style="margin:0 auto;">
+                    <summary style="font-size:18px;"><b>JavaScript</b></summary>
+                    <p><b>SoloLearn (Issued 27 December, 2019)</b></p>
+                    <a target="_blank" href="http://www.linkedin.com/in/yizhe-zhang"><embed src="{% static 'img/js.jpg'%}"></a>
+                </details>
+                <br>
+                <!-- Contact Me-->
+                <h4 id="p6">Contact Me</h4>
+                <hr class="bg-dark" style="border:1px solid">
+                <form id="contact" action="/resume/en/" method="post" >
+                    {% csrf_token %}
+                    <fieldset>
+                        <input name="name" type="text" class="form-control bgc_dark margin_bottom" id="name" placeholder="Your Name" required>
+                    </fieldset>
+                    <fieldset>
+                        <input name="email" type="email" class="form-control bgc_dark margin_bottom" id="email" placeholder="Email" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea name="message" rows="6" class="form-control bgc_dark margin_bottom" id="message" placeholder="Message" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" id="form-submit" class="btn bg-dark margin_bottom" style="color:white;">Send Message</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col-3">
+            <br>
+            <ul class="menu_ul">
+                <li class="menu_li"><a href="#p0">My Websites</a></li>
+                <li class="menu_li"><a href="#p1">Summary</a></li>
+                <li class="menu_li"><a href="#p2">Skills</a></li>
+                <li class="menu_li"><a href="#p3">Education</a></li>
+                <li class="menu_li"><a href="#p4">Projects</a></li>
+                <li class="menu_li"><a href="#p5">Certificates</a></li>
+                <li class="menu_li"><a href="#p6">Contact Me</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <p>Ervin Zhang |
+                <a style="color:darkgrey" target="_blank" href="mailto:zhang.yizhe@husky.neu.edu?subject=Please%20type%20in%20the%20subject">
+                    zhang.yizhe@husky.neu.edu
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "header.html" %}
+{% load static %}
+{% block title %}Submit{% endblock %}
+
+{% block content %}
+    <div>
+        <h1><em>Msg</em>submitted</h1>
+        <h4><em>Status: {{status}}</em></h4>
+        <h3><b>Glad to hear from you, your messages will display below.</b></h3>
+        <p>name : {{name}}
+        <br>email : {{email}}
+        <br>message : {{message}}
+        <br>Have a nice day!
+    </div>
+{% endblock %}
