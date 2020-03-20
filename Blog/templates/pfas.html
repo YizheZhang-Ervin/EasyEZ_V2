@@ -8,15 +8,15 @@
         <div class="col-9">
             <br>
             <p id="typeofchart" style="font-weight:bold;"></p>
-            <embed id="pic1" src="{% static '/pfas/img/1week.png' %}" style="height:30%"/>
-            <embed id="pic2" src="{% static '/pfas/img/2weeks.png' %}" style="height:30%"/>
-            <embed id="pic3" src="{% static '/pfas/img/3weeks.png' %}" style="height:30%"/>
-            <embed id="pic4" src="{% static '/pfas/img/1month.png' %}" style="height:30%"/>
-            <embed id="pic5" src="{% static '/pfas/img/2months.png' %}" style="height:30%"/>
-            <embed id="pic6" src="{% static '/pfas/img/3months.png' %}" style="height:30%"/>
+            <embed id="pic1" src="{% static '/pfas/img/1week.png' %}" style="height:25%"/>
+            <embed id="pic2" src="{% static '/pfas/img/2weeks.png' %}" style="height:25%"/>
+            <embed id="pic3" src="{% static '/pfas/img/3weeks.png' %}" style="height:25%"/>
+            <embed id="pic4" src="{% static '/pfas/img/1month.png' %}" style="height:25%"/>
+            <embed id="pic5" src="{% static '/pfas/img/2months.png' %}" style="height:25%"/>
+            <embed id="pic6" src="{% static '/pfas/img/3months.png' %}" style="height:25%"/>
             <embed id="pic7" src="{% static '/pfas/img/allin_3D.png' %}" />
-            <embed id="pic8" src="{% static '/pfas/img/allin_animation.gif' %}" />
-            <hr style="border:1px dashed #FFD700;" align="left">
+            <embed id="pic8" src="{% static '/pfas/img/allin_animation.gif' %}" style="height:50%"/>
+            <hr style="border:1px solid black;background-color:black;">
             <p style="font-size:21px"><b>Today's Gold Prices Here:</b></p>
             <p style="line-height:40px"><i>(Current Date: {{localtime}} - ASIA/SHANGHAI)</i></p>
             <p style="line-height:40px"><i>(Last Trading Day: {{goldpricedate}} - ASIA/SHANGHAI)</i></p>
@@ -50,7 +50,7 @@
         <div class="col-3">
             <br>
             <p class="p-nav"><strong>Time-Slicing</strong></p>
-            <hr style="color:#F0F8FF;height:1.5px;background-color:black;width:80%"/>
+            <hr style="color:black;height:1.5px;background-color:black;"/>
             <ul class="ul-nav">
                 <li><a style="cursor:pointer;" id='day'>Day</a></li>
                 <li><a style="cursor:pointer;" id="1week">1 Week</a></li>
