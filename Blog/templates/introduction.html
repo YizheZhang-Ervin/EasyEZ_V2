@@ -11,11 +11,13 @@
                 <!-- Title -->
                 <h4 id="p0">My Websites</h4>
                 <hr class="bg-dark" style="border:1px solid">
-                <a href="/resume/en/" class="ws">&gt; Personal Website &nbsp;(Django)</a>
+                <a target="_blank" href="/introduction/" class="ws">&gt; Personal Blog &nbsp;(Django)</a>
+                <h5 class="pi">&nbsp;&nbsp;&nbsp;&nbsp;Personal Blog and Resources Sharing</h5>
+                <a target="_blank" href="https://ervinzhang.herokuapp.com/" class="ws">&gt; Personal Website &nbsp;(Django)</a>
                 <h5 class="pi">&nbsp;&nbsp;&nbsp;&nbsp;Personal Introduction and Experience</h5>
-                <a href="https://bea-analysis.herokuapp.com/" class="ws">&gt; BEA-Gold Visualization System &nbsp;(Tornado)</a>
+                <a target="_blank" href="https://bea-analysis.herokuapp.com/" class="ws">&gt; BEA-Gold Visualization System &nbsp;(Tornado)</a>
                 <h5 class="pi">&nbsp;&nbsp;&nbsp;&nbsp;Gold Visualization different format plots </h5>
-                <a href="https://fin-analysis.herokuapp.com/" class="ws">&gt; NIA7-Financial Analysis System &nbsp;(Flask)</a>
+                <a target="_blank" href="https://github.com/YizheZhang-Ervin/NIA7" class="ws">&gt; NIA7-Financial Analysis System &nbsp;(Flask)</a>
                 <h5 class="pi">&nbsp;&nbsp;&nbsp;&nbsp;More Financial Products analysis(developing)</h5>
                 <p></p>
                 <p></p>
@@ -82,7 +84,7 @@
                     <summary style="font-size:18px;"><b>Personal Website with embedded PFAS (Feb 2020 - Present) - Django</b></summary>
                     <p>$ Created Django personal website, and embedded Python Financial Analysis System which plots the gold price trend in different forms</p>
                     <p>$ Built exquisite user interface &amp; front-end by bootstrap, html/css, javascript</p>
-                    <p>$ Embedded in<a href="/pfas/"> this website</a> with Mysql by Pythonanywhere Server platform</p>
+                    <p>$ Already transplanted in<a href="/pfas/"> this website</a> with Mysql by Pythonanywhere Server platform</p>
                 </details>
                 <a target="_blank" href="/pfas/"><embed src="{% static 'img/pfas.jpg'%}"></a>
                 <br><br>
@@ -140,7 +142,7 @@
                 <!-- Contact Me-->
                 <h4 id="p6">Contact Me</h4>
                 <hr class="bg-dark" style="border:1px solid">
-                <form id="contact" action="/resume/en/" method="post" >
+                <form id="contact" action="/introduction/" method="post" >
                     {% csrf_token %}
                     <fieldset>
                         <input name="name" type="text" class="form-control bgc_dark margin_bottom" id="name" placeholder="Your Name" required>

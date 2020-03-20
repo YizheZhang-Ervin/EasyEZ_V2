@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'dr6-w(_7ttw$o$0h_ewpv975-jduet@(8-3!urfkymoa*j8wpq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,7 +77,23 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'HOST': '127.0.0.1',
+    #     'PORT': 3306,
+    #     'NAME': 'djangodb',
+    #     'USER': 'root',
+    #     'PASSWORD': 'root001',
+    # },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'HOST': 'ErvinZhang.mysql.pythonanywhere-services.com',
+    #     'PORT': 3306,
+    #     'NAME': 'ErvinZhang$djangodb',
+    #     'USER': 'ErvinZhang',
+    #     'PASSWORD': 'rootroot',
+    # },
 }
 
 
