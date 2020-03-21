@@ -8,14 +8,15 @@
         <div class="row">
             <div class="col-9">
                 <div id="div001">
+                    <!-- carousel -->
                     <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:90%;margin:2% auto;text-align:center;">
                         <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
                             <li data-target="#myCarousel" data-slide-to="2" class=""></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item">
+                            <div class="carousel-item active">
                                 <img width="100%" src="{% static 'img/bea-gvs-crs.png'%}">
                                 <div class="container">
                                     <div class="carousel-caption text-left">
@@ -23,7 +24,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item active">
+                            <div class="carousel-item">
                                 <img width="100%" src="{% static 'img/pfas-crs.png'%}">
                                 <div class="container">
                                     <div class="carousel-caption">
@@ -58,14 +59,19 @@
                     <a target="_blank" href="https://bea-analysis.herokuapp.com/" class="ws">&gt; BEA-Gold Visualization System &nbsp;(Tornado)</a>
                     <h5 class="pi">&nbsp;&nbsp;&nbsp;&nbsp;Gold Visualization different format plots </h5>
                     <a target="_blank" href='https://github.com/YizheZhang-Ervin' class="btn">And More>></a>
-                    <p></p>
-                    <p></p>
-                    <br>
+                    <br><br><br><br>
                     <!-- summary -->
-                    <h4 id="p1">Summary</h4>
-                    <hr class="bg-dark" style="border:1px solid">
-                    <p>Software engineer enthusiast with years of learning experience in system design, development, and innovation. Proficient in both Front-end/Back-end web technologies and software design process.</p>
-                    <p>Quick learner, proactive, adaptable, organized and a team player is seeking a Full-Stack Engineer Co-op (Intern) to utilize my technical and interpersonal skills.</p>
+                    <div class="row featurette">
+                      <div class="col-md-7 order-md-2">
+                          <h2 class="featurette-heading">Summary<span class="text-muted"></span></h2>
+                          <hr class="bg-dark" style="border:1px solid">
+                          <p>Software engineer enthusiast with years of learning experience in system design, development, and innovation. Proficient in both Front-end/Back-end web technologies and software design process.</p>
+                          <p>Quick learner, proactive, adaptable, organized and a team player is seeking a Full-Stack Engineer Co-op (Intern) to utilize my technical and interpersonal skills.</p>
+                      </div>
+                      <div class="col-md-5 order-md-1" style="text-align:center;">
+                        <embed src="{% static 'img/summary.png'%}">
+                      </div>
+                    </div>
                     <br>
                     <!-- skills -->
                     <h4 id="p2">Skills Overview</h4>
@@ -168,24 +174,34 @@
                     <!-- certificates -->
                     <h4 id="p5">Certificates</h4>
                     <hr class="bg-dark" style="border:1px solid">
-                    <details style="margin:0 auto;">
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <details style="margin:0 auto;">
                         <summary style="font-size:18px;"><b>Python 3</b></summary>
                         <p><b>SoloLearn (Issued 27 December, 2019)</b></p>
                         <a target="_blank" href="http://www.linkedin.com/in/yizhe-zhang"><embed src="{% static 'img/python3.jpg'%}"></a>
-                    </details>
-                    <br>
-                    <details style="margin:0 auto;">
+                        </details>
+                        <br>
+                      </div>
+                      <div class="col-md-6">
+                        <details style="margin:0 auto;">
                         <summary style="font-size:18px;"><b>BI Developer</b></summary>
                         <p><b>Udemy (Issued 8 November,2019)</b></p>
                         <a target="_blank" href="http://www.linkedin.com/in/yizhe-zhang"><embed src="{% static 'img/bi.jpg'%}"></a>
-                    </details>
-                    <br>
-                    <details style="margin:0 auto;">
+                        </details>
+                        <br>
+                      </div>
+                      <div class="col-md-6">
+                        <details style="margin:0 auto;">
                         <summary style="font-size:18px;"><b>JavaScript</b></summary>
                         <p><b>SoloLearn (Issued 27 December, 2019)</b></p>
                         <a target="_blank" href="http://www.linkedin.com/in/yizhe-zhang"><embed src="{% static 'img/js.jpg'%}"></a>
-                    </details>
-                    <br>
+                        </details>
+                        <br>
+                      </div>
+                    </div>
+
                     <!-- Contact Me-->
                     <h4 id="p6">Contact Me</h4>
                     <hr class="bg-dark" style="border:1px solid">

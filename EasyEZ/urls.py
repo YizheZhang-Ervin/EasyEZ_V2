@@ -29,7 +29,8 @@ urlpatterns = [
     path('excel/', views.excel),
     path('pfas/', views.pfas),
     path('article/', views.article),
-    path('', views.introduction),
+    path('index/', views.index),
+    path('', views.index),
 ]
 
 

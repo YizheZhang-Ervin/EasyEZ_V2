@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>{% block title %}Yizhe(Ervin) Zhang - Home{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="{% static 'img/ez.ico' %}"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap-cover.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+  </head>
+<body class="text-light" style="text-align:center;background:url({% static 'img/covers2.png'%})">
+  <div class="d-flex w-100 h-100 p-3 mx-auto flex-column" style="max-width:90%;">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Easy-EZ</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link active" href="/introduction">Home</a>
+          <a class="nav-link" href="/introduction/#p6">Contact</a>
+          <a class="nav-link" href="/pfas">Tools</a>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main" class="inner cover container">
+      <div class="row">
+        <div class="col-6">
+        </div>
+        <div class="col-6">
+          <h1 class="cover-heading">Hi, I am Yizhe Zhang</h1>
+          <p class="lead">Welcome to my Personal Website. Have a nice day!</p>
+          <p class="lead">
+            <a href="/introduction" class="btn btn-lg btn-dark">Enter my Website>></a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Yizhe(Ervin) Zhang |
+          <a style="color:white" target="_blank" href="mailto:zhang.yizhe@husky.neu.edu?subject=Please%20type%20in%20the%20subject">
+            zhang.yizhe@husky.neu.edu
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

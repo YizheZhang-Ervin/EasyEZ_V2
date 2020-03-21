@@ -12,6 +12,10 @@ import Blog.financialanalysis as fa
 from Blog import models
 
 
+def index(request):
+    return render(request, 'index.html')
+
+
 def introduction(request):
     if request.method == "GET":
         return render(request, 'introduction.html')
