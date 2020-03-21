@@ -9,6 +9,7 @@ from django.shortcuts import render, redirect
 from django.template import loader
 from django.views.decorators.clickjacking import xframe_options_exempt
 import Blog.financialanalysis as fa
+from Blog import models
 
 
 def introduction(request):
@@ -62,3 +63,12 @@ def pfas(request):
     goldpricedate, currentdata = fa.getcurrentdata()
     return render(request, 'pfas.html',
                   {'localtime': localtime, 'goldpricedate': goldpricedate, 'currentdata': currentdata})
+
+
+def excel(request):
+    return render(request, 'spreadsheet_v2.html')
+
+
+def article(request):
+    article_list = models.article.objects.all()
+    return render(request, 'article.html', {'article': article_list})

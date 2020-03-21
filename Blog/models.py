@@ -7,7 +7,7 @@ class article(models.Model):
     title = models.CharField(max_length=50, verbose_name='article_title', editable=True)
     # email = models.EmailField(db_index=True)
     content = models.TextField()
-    img = models.ImageField(upload_to='upload')
+    img = models.ImageField(upload_to='static/upload')
     article_type_choices = (
         (0, "Python"),
         (1, "Other"),

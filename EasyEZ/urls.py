@@ -1,4 +1,4 @@
-"""ErvinForever URL Configuration
+"""EasyEZ URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -18,7 +18,7 @@ from django.urls import path, re_path
 from django.views import static
 
 from Blog import views
-from ErvinForever import settings
+from EasyEZ import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,7 +26,9 @@ urlpatterns = [
     path('introduction/', views.introduction),
     path('fullstack/', views.fullstack),
     path('spa/', views.spa),
+    path('excel/', views.excel),
     path('pfas/', views.pfas),
+    path('article/', views.article),
     path('', views.introduction),
 ]
 

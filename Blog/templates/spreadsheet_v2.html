@@ -1,0 +1,58 @@
+<! DOCTYPE HTML>
+{% load static %}
+<html>
+  <head>
+    <title>Excel</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'excel/CSS/spreadsheet.css' %}" />
+  </head>
+  <body>
+    <!-- header & navigation bar & function input bar-->
+    <header>
+      <h2>Spreadsheet - Excel V2.0.0</h2>
+      <nav>
+        <input type="file" id="inputfile" style="display:none" accept=".csv" />
+        <button
+          class="navbtn"
+          id="loadcsv"
+          onclick="document.getElementById('inputfile').click()"
+        >
+          Load CSV
+        </button>
+        <button class="navbtn" id="exportcsv">Export CSV</button>
+        <button class="navbtn" id="addrow">Add Rows(+)</button>
+        <button class="navbtn" id="addcol">Add Columns(+)</button>
+        <button class="navbtn" id="delrow">Delete Rows(-)</button>
+        <button class="navbtn" id="delcol">Delete Columns(-)</button>
+      </nav>
+      <div class="div001" id="div001">
+        <span class="span001">Fx:</span>
+        <textarea
+          name="textarea"
+          id="ta1"
+          cols="1"
+          rows="1"
+          readonly
+        ></textarea>
+      </div>
+    </header>
+    <!--main section of spreadsheet-->
+    <section class="section001">
+      <div class="div002">
+        <!--Axis X(ABCDEFG...)-->
+        <div id="axisx"></div>
+        <!--Axis Y(1234567...)-->
+        <div id="axisy"></div>
+        <!--Main body of sheet-->
+        <table id="table"></table>
+      </div>
+    </section>
+    <div id="selection"></div>
+    <!--Status Bar-->
+    <footer><p class="footerp" id="footerp">Sheet1.csv</p></footer>
+    <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+    <script src="{% static 'excel/JS/celloperate_1.js' %}"></script>
+    <script src="{% static 'excel/JS/celloperate_2.js' %}"></script>
+    <script type="text/javascript" src="{% static 'excel/JS/spreadsheet_v2.js' %}"></script>
+    <script type="text/javascript" src="{% static 'excel/JS/iocsv.js' %}"></script>
+  </body>
+</html>

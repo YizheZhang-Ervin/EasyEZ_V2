@@ -1,0 +1,104 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18%;
+  border: 0px white solid;
+  padding: 0 5 10 5;
+  outline: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3%;
+  background-color: lightgray;
+  border: 3px lightgray solid;
+  outline: none;
+}
+
+.navbtn {
+  background: transparent;
+  color: black;
+  font-size: 18px;
+}
+
+#delrow,
+#delcol {
+  /* background: rgb(108, 111, 131);
+  color: black; */
+  font-size: 18px;
+}
+
+body {
+  background-image: url(../IMG/bg.jpg);
+  outline: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.section001 {
+  /* top: 18%;
+  border: 3px white solid;
+  padding-bottom: 3%;
+  overflow: auto;
+  width: 100%;
+  height: 73%; */
+}
+
+.div001 {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.div002 {
+  top: 20%;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  height: 76%;
+}
+
+.span001 {
+  width: 2%;
+}
+
+#ta1 {
+  width: 97%;
+  resize: none;
+  background: transparent;
+  font-size: 17px;
+  padding: 0;
+  border: 1px white solid;
+  overflow: hidden;
+}
+
+.footerp {
+  margin: 0;
+  font-size: 17px;
+}
+
+.unit:focus {
+  background: rgb(130, 145, 243);
+}
+
+table {
+  margin-left: 40px;
+  margin-top: 20px;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+#axisy button {
+  font-size: medium;
+}
+
+#selection {
+  pointer-events: none;
+  position: absolute;
+  border: 1px solid #0882cf;
+  background-color: rgba(130, 145, 243, 0.5);
+}
