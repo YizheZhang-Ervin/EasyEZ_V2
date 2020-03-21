@@ -6,7 +6,7 @@
 }
 
 #nav001{
-    border-top:white 1.2px outset;
+    border-top:beige 1.2px outset;
 }
 
 #nav_a001{
@@ -37,6 +37,13 @@
     background:beige;
 }
 
+#main002{
+    background:rgba(19,21,34,0.95);
+    color:gold;
+    border-top:1.5px solid beige;
+    border-left:1.5px solid beige;
+}
+
 .line-short{
     line-height:10px;
     margin-top:1%;
@@ -64,7 +71,7 @@
 }
 
 .menu_li a{
-    color:grey!important;
+    color:steelblue!important;
 }
 
 #footer{
@@ -74,8 +81,8 @@
     margin-top:5%;
 }
 
-#main001 a{
-    color:mediumblue;
+#div001 a{
+    color:steelblue;
 }
 
 p{

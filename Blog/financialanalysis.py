@@ -61,13 +61,13 @@ def plot_price_trend(time, name):
     y_high = data['High'].values
     y_low = data['Low'].values
     y_settle = data['Settle'].values
-    plt.title(name, color='black', fontsize='large', fontweight='bold')
+    plt.title(name, color='gold', fontsize='large', fontweight='bold')
     plt.figure(dpi=300)
     # border of axis x and y
     ax = plt.gca()
     ax.spines['top'].set_color('none')
-    ax.spines['bottom'].set_color('black')
-    ax.spines['left'].set_color('black')
+    ax.spines['bottom'].set_color('gold')
+    ax.spines['left'].set_color('gold')
     ax.spines['right'].set_color('none')
     plt.plot(x, y_open, label="Open Price")
     plt.plot(x, y_close, label="Close Price")
@@ -87,8 +87,8 @@ def plot_price_trend(time, name):
         for index, value in enumerate(x):
             x_display.append(value.strftime('%m-%d'))
     # axis x and y
-    plt.xticks(x, x_display, color='black', rotation='45')
-    plt.yticks(color='black')
+    plt.xticks(x, x_display, color='gold', rotation='45')
+    plt.yticks(color='gold')
     plt.legend()
     pwd = os.path.dirname(os.path.dirname(__file__))
     saveplace = pwd + '/static/pfas/img/' + name + '.png'
@@ -142,7 +142,7 @@ def plot_3D(name):
     ax.plot(x, y, zs=0, zdir='z', label='curve in (x,y)', color='blue')
     ax.scatter(xs=x, zs=z, ys=y, zdir='z', label='points in (x,y,z)', c='gold')
     ax.legend()
-    ax.title.set_color('black')
+    ax.title.set_color('gold')
     ax.w_xaxis.set_pane_color((0.0, 0.0, 0.0, 0.0))
     ax.w_yaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
     ax.w_zaxis.set_pane_color((1.0, 1.0, 1.0, 0.0))
@@ -150,12 +150,12 @@ def plot_3D(name):
     ax.set_ylabel('Settle Price')
     ax.set_zlabel('Volume')
     ax.view_init(elev=35, azim=-45)
-    plt.xticks(color='black')
-    plt.yticks(color='black')
-    ax.tick_params(axis='z', colors='black')
-    ax.xaxis.label.set_color('black')
-    ax.yaxis.label.set_color('black')
-    ax.zaxis.label.set_color('black')
+    plt.xticks(color='gold')
+    plt.yticks(color='gold')
+    ax.tick_params(axis='z', colors='gold')
+    ax.xaxis.label.set_color('gold')
+    ax.yaxis.label.set_color('gold')
+    ax.zaxis.label.set_color('gold')
 
     pwd = os.path.dirname(os.path.dirname(__file__))
     saveplace = pwd + '/static/pfas/img/' + name + '.png'

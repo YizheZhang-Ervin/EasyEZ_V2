@@ -21,31 +21,37 @@
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Introduction</a>
                         <div class="dropdown-menu bg-dark" aria-labelledby="dropdown01">
-                            <a class="nav-link" href="/introduction/">Introduction<span class="sr-only">(current)</span></a>
-                            <a class="nav-link" href="/fullstack/">Technology Stack</a>
+                            <a class="dropdown-item color_white" href="/introduction/">Introduction<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item color_white" href="/fullstack/">Technology Stack</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource-Sharing</a>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resource-Sharing</a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="dropdown02">
+                            <a class="dropdown-item color_white disabled" href="#">Video</a>
+                            <a class="dropdown-item color_white disabled" href="#">Article</a>
+                            <a class="dropdown-item color_white disabled" href="#">Images</a>
+                            <a class="dropdown-item color_white disabled" href="#">Music</a>
+                            <a class="dropdown-item color_white disabled" href="#" >Others</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
                         <div class="dropdown-menu bg-dark" aria-labelledby="dropdown03">
-                            <a class="dropdown-item color_white" href="#">Video</a>
-                            <a class="dropdown-item color_white" href="#">Article</a>
-                            <a class="dropdown-item color_white" href="#">Others</a>
+                            <a class="dropdown-item color_white" href="/pfas/">PFAS</a>
+                            <a class="dropdown-item color_white" target="_blank" href="https://bea-analysis.herokuapp.com/">BEA-GVS</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Tools</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 bg-dark" type="text" placeholder="Search" aria-label="Search">
+                <form class="form-inline my-2 my-lg-0" action="http://www.google.com/search" method="get" target="_blank">
+                    <input name=q class="form-control mr-sm-2 bg-dark" type="text" placeholder="Google Search" aria-label="Search" style="color:white;" maxlength="255">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
 
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" style="background-color:beige;">
                 <!-- left navbar -->
                 <nav id="nav001" class="col-md-2 d-none d-md-block bg-dark sidebar">
                     <div class="sidebar-sticky">
@@ -65,18 +71,18 @@
                         </li>
                       </ul>
               
-                      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 color_white">
                         <span>Contact Me</span>
-                        <a class="d-flex align-items-center text-muted" href="/introduction/#p6" aria-label="Add a new report">
+                        <a class="d-flex align-items-center color_white" href="/introduction/#p6" aria-label="Add a new report">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
                         </a>
                       </h6>
                       <ul class="nav flex-column mb-2">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            <a target="_blank" href="mailto:zhang.yizhe@husky.neu.edu?subject=Please%20type%20in%20the%20subject"><p class="text_left color_white">zhang.yizhe@husky.neu.edu</p></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/yizhe-zhang"><p class="text_left color_white">Linkedin: yizhe-zhang</p></a>
-                            <a target="_blank" href="https://github.com/YizheZhang-Ervin"><p class="text_left color_white">Github: YizheZhang-Ervin</p></a>
+                        <li class="nav-item" style="word-break:break-word;">
+                          <a class="nav-link">
+                            <a target="_blank" href="mailto:zhang.yizhe@husky.neu.edu?subject=Please%20type%20in%20the%20subject"><p class="text_left color_white"><i>> Email: zhang.yizhe</i></p></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/yizhe-zhang"><p class="text_left color_white"><i>> Linkedin: yizhe-zhang</i></p></a>
+                            <a target="_blank" href="https://github.com/YizheZhang-Ervin"><p class="text_left color_white"><i>> Github: YizheZhang-Ervin</i></p></a>
                           </a>
                         </li>
                       </ul>
@@ -84,9 +90,7 @@
                     </div>
                   </nav>
                 <!-- main content -->
-                <main id="main001" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                    {% block content %}{% endblock %}
-                </main>
+                {% block content %}{% endblock %}
             </div>
         </div>
 

@@ -3,74 +3,75 @@
 {% block title %}PFAS{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-9">
-            <br>
-            <p id="typeofchart" style="font-weight:bold;"></p>
-            <embed id="pic1" src="{% static '/pfas/img/1week.png' %}" style="height:25%"/>
-            <embed id="pic2" src="{% static '/pfas/img/2weeks.png' %}" style="height:25%"/>
-            <embed id="pic3" src="{% static '/pfas/img/3weeks.png' %}" style="height:25%"/>
-            <embed id="pic4" src="{% static '/pfas/img/1month.png' %}" style="height:25%"/>
-            <embed id="pic5" src="{% static '/pfas/img/2months.png' %}" style="height:25%"/>
-            <embed id="pic6" src="{% static '/pfas/img/3months.png' %}" style="height:25%"/>
-            <embed id="pic7" src="{% static '/pfas/img/allin_3D.png' %}" />
-            <embed id="pic8" src="{% static '/pfas/img/allin_animation.gif' %}" style="height:50%"/>
-            <hr style="border:1px solid black;background-color:black;">
-            <p style="font-size:21px"><b>Today's Gold Prices Here:</b></p>
-            <p style="line-height:40px"><i>(Current Date: {{localtime}} - ASIA/SHANGHAI)</i></p>
-            <p style="line-height:40px"><i>(Last Trading Day: {{goldpricedate}} - ASIA/SHANGHAI)</i></p>
-            <table style="border:2px solid gold" width="370px">
-              <tr>
-                <th style="border: 2px outset rgba(255,215,0,0.7);">Type</th>
-                <th style="border: 2px outset rgba(255,215,0,0.7);">Price</th>
-              </tr>
-              <tr>
-                <td>Open&nbsp;Price: </td>
-                <td>{{currentdata.0}} CNY/g</td>
-              </tr>
-              <tr>
-                <td>Close Price: </td>
-                <td>{{currentdata.1}} CNY/g</td>
-              </tr>
-              <tr>
-                <td>Settle Price: </td>
-                <td>{{currentdata.4}} CNY/g</td>
-              </tr>
-              <tr>
-                <td>High&nbsp;&nbsp;Price: </td>
-                <td>{{currentdata.2}} CNY/g</td>
-              </tr>
-              <tr>
-                <td>Low&nbsp;&nbsp;&nbsp;Price: </td>
-                <td>{{currentdata.3}} CNY/g</td>
-              </tr>
-            </table>
-        </div>
-        <div class="col-3">
-            <br>
-            <p class="p-nav"><strong>Time-Slicing</strong></p>
-            <hr style="color:black;height:1.5px;background-color:black;"/>
-            <ul class="ul-nav">
-                <li><a style="cursor:pointer;" id='day'>Day</a></li>
-                <li><a style="cursor:pointer;" id="1week">1 Week</a></li>
-                <li><a style="cursor:pointer;" id="2weeks">2 Weeks</a></li>
-                <li><a style="cursor:pointer;" id="3weeks">3 Weeks</a></li>
-                <li><a style="cursor:pointer;" id="1month">1 Month</a></li>
-                <li><a style="cursor:pointer;" id="2months">2 Months</a></li>
-                <li><a style="cursor:pointer;" id="3months">3 Months</a></li>
-                <li><a style="cursor:pointer;" id="3months-3D">3 Months(3D)</a></li>
-                <li><a style="cursor:pointer;" id="3months-ani">3 Months(Animation)</a></li>
-            </ul>
-        </div>
-        <div id="footer">
-            <p>Ervin Zhang |
-                <a style="color:darkgrey" target="_blank" href="mailto:zhang.yizhe@husky.neu.edu?subject=Please%20type%20in%20the%20subject">
-                    zhang.yizhe@husky.neu.edu
-                </a>
-            </p>
+<main id="main002" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <br>
+                <p id="typeofchart" style="font-weight:bold;"></p>
+                <embed id="pic1" src="{% static '/pfas/img/1week.png' %}" style="height:25%"/>
+                <embed id="pic2" src="{% static '/pfas/img/2weeks.png' %}" style="height:25%"/>
+                <embed id="pic3" src="{% static '/pfas/img/3weeks.png' %}" style="height:25%"/>
+                <embed id="pic4" src="{% static '/pfas/img/1month.png' %}" style="height:25%"/>
+                <embed id="pic5" src="{% static '/pfas/img/2months.png' %}" style="height:25%"/>
+                <embed id="pic6" src="{% static '/pfas/img/3months.png' %}" style="height:25%"/>
+                <embed id="pic7" src="{% static '/pfas/img/allin_3D.png' %}" />
+                <embed id="pic8" src="{% static '/pfas/img/allin_animation.gif' %}" style="height:50%;filter:invert(1);"/>
+                <hr style="border:1px solid gold;background-color:gold;">
+                <p style="font-size:21px"><b>Today's Gold Prices Here:</b></p>
+                <p style="line-height:40px"><i>(Current Date: {{localtime}} - ASIA/SHANGHAI)</i></p>
+                <p style="line-height:40px"><i>(Last Trading Day: {{goldpricedate}} - ASIA/SHANGHAI)</i></p>
+                <table style="border:2px solid gold" width="370px">
+                  <tr>
+                    <th style="border: 2px outset rgba(255,215,0,0.7);">Type</th>
+                    <th style="border: 2px outset rgba(255,215,0,0.7);">Price</th>
+                  </tr>
+                  <tr>
+                    <td>Open&nbsp;Price: </td>
+                    <td>{{currentdata.0}} CNY/g</td>
+                  </tr>
+                  <tr>
+                    <td>Close Price: </td>
+                    <td>{{currentdata.1}} CNY/g</td>
+                  </tr>
+                  <tr>
+                    <td>Settle Price: </td>
+                    <td>{{currentdata.4}} CNY/g</td>
+                  </tr>
+                  <tr>
+                    <td>High&nbsp;&nbsp;Price: </td>
+                    <td>{{currentdata.2}} CNY/g</td>
+                  </tr>
+                  <tr>
+                    <td>Low&nbsp;&nbsp;&nbsp;Price: </td>
+                    <td>{{currentdata.3}} CNY/g</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="col-3">
+                <br>
+                <p class="p-nav"><strong>Time-Slicing</strong></p>
+                <ul class="ul-nav" style="border-left:1px solid gold">
+                    <li><a style="cursor:pointer;" id='day'>Day</a></li>
+                    <li><a style="cursor:pointer;" id="1week">1 Week</a></li>
+                    <li><a style="cursor:pointer;" id="2weeks">2 Weeks</a></li>
+                    <li><a style="cursor:pointer;" id="3weeks">3 Weeks</a></li>
+                    <li><a style="cursor:pointer;" id="1month">1 Month</a></li>
+                    <li><a style="cursor:pointer;" id="2months">2 Months</a></li>
+                    <li><a style="cursor:pointer;" id="3months">3 Months</a></li>
+                    <li><a style="cursor:pointer;" id="3months-3D">3 Months(3D)</a></li>
+                    <li><a style="cursor:pointer;" id="3months-ani">3 Months(Animation)</a></li>
+                </ul>
+            </div>
+            <div style="border-top:1px solid gold;text-align:center;width:100%;margin-top:5%;">
+                <p>Ervin Zhang |
+                    <a style="color:steelblue" target="_blank" href="mailto:zhang.yizhe@husky.neu.edu?subject=Please%20type%20in%20the%20subject">
+                        zhang.yizhe@husky.neu.edu
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
-</div>
-<script src="{% static 'pfas/pfas.js' %}"></script>
+    <script src="{% static 'pfas/pfas.js' %}"></script>
+</main>
 {% endblock %}
