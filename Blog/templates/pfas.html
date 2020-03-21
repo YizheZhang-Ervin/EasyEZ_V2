@@ -3,20 +3,20 @@
 {% block title %}PFAS{% endblock %}
 
 {% block content %}
-<main id="main002" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<main id="main002" role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
     <div class="container">
         <div class="row">
             <div class="col-9">
                 <br>
                 <p id="typeofchart" style="font-weight:bold;"></p>
-                <embed id="pic1" src="{% static '/pfas/img/1week.png' %}" style="height:25%"/>
-                <embed id="pic2" src="{% static '/pfas/img/2weeks.png' %}" style="height:25%"/>
-                <embed id="pic3" src="{% static '/pfas/img/3weeks.png' %}" style="height:25%"/>
-                <embed id="pic4" src="{% static '/pfas/img/1month.png' %}" style="height:25%"/>
-                <embed id="pic5" src="{% static '/pfas/img/2months.png' %}" style="height:25%"/>
-                <embed id="pic6" src="{% static '/pfas/img/3months.png' %}" style="height:25%"/>
-                <embed id="pic7" src="{% static '/pfas/img/allin_3D.png' %}" />
-                <embed id="pic8" src="{% static '/pfas/img/allin_animation.gif' %}" style="height:50%;filter:invert(1);"/>
+                <embed id="pic1" src="{% static '/pfas/img/1week.png' %}" style="width:70%"/>
+                <embed id="pic2" src="{% static '/pfas/img/2weeks.png' %}" style="width:70%"/>
+                <embed id="pic3" src="{% static '/pfas/img/3weeks.png' %}" style="width:70%"/>
+                <embed id="pic4" src="{% static '/pfas/img/1month.png' %}" style="width:70%"/>
+                <embed id="pic5" src="{% static '/pfas/img/2months.png' %}" style="width:70%"/>
+                <embed id="pic6" src="{% static '/pfas/img/3months.png' %}" style="width:70%"/>
+                <embed id="pic7" src="{% static '/pfas/img/allin_3D.png' %}" style="width:70%" />
+                <embed id="pic8" src="{% static '/pfas/img/allin_animation.gif' %}" style="width:70%;filter:invert(1);"/>
                 <hr style="border:1px solid gold;background-color:gold;">
                 <p style="font-size:21px"><b>Today's Gold Prices Here:</b></p>
                 <p style="line-height:40px"><i>(Current Date: {{localtime}} - ASIA/SHANGHAI)</i></p>
@@ -48,7 +48,7 @@
                   </tr>
                 </table>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
                 <br>
                 <p class="p-nav"><strong>Time-Slicing</strong></p>
                 <ul class="ul-nav" style="border-left:1px solid gold">

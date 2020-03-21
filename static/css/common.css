@@ -54,6 +54,11 @@
     color:black!important;
 }
 
+.bgc_black{
+    background-color:rgba(0,0,0,0.5)!important;
+    color:white!important;
+}
+
 .margin_bottom{
     margin-bottom:20px!important;
 }
