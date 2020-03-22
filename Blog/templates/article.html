@@ -10,7 +10,8 @@
                 <!-- articles -->
                 {% for item in page reversed %}
                 <div class="bg_article div_article">
-                    <h2 class="center_align">{{item.title}}</h2>
+                    <h2 class="center_align">{{item.main_title}}</h2>
+                    <h5 class="center_align">{{item.sub_title}}</h5>
                     <textarea class="ta_article" readonly>{{item.content}}</textarea>
                 </div>
                 {% endfor %}
@@ -35,7 +36,7 @@
             <!-- articles list -->
             <div class="col-3 d-none d-md-block" style="border-left:1px solid black">
                 {% for a in all reversed %}
-                    <li class="li_article steelblue"><a class="steelblue" href="/article/{{ forloop.revcounter }}">{{a.title}}</a></li>
+                    <li class="li_article steelblue"><a class="steelblue" href="/article/{{ forloop.revcounter }}">{{a.main_title}}<br>{{a.sub_title}}</a></li>
                 {% endfor %}
             </div>
             <div id="footer">

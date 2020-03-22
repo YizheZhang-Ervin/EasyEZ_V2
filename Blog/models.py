@@ -17,4 +17,4 @@ class article(models.Model):
     article_type = models.IntegerField(choices=article_type_choices, default=0)
 
     def __str__(self):
-        return self.title
+        return self.main_title
