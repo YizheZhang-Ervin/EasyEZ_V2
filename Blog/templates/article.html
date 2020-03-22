@@ -8,7 +8,7 @@
         <div class="row" style="margin-top:2%;">
             <div class="col-md-9">
                 <!-- articles -->
-                {% for item in page %}
+                {% for item in page reversed %}
                 <div class="bg_article div_article">
                     <h2 class="center_align">{{item.title}}</h2>
                     <textarea class="ta_article" readonly>{{item.content}}</textarea>
@@ -34,8 +34,8 @@
             </div>
             <!-- articles list -->
             <div class="col-3 d-none d-md-block" style="border-left:1px solid black">
-                {% for a in all %}
-                    <li class="li_article steelblue"><a class="steelblue" href="/article/{{ forloop.counter }}">{{a.title}}</a></li>
+                {% for a in all reversed %}
+                    <li class="li_article steelblue"><a class="steelblue" href="/article/{{ forloop.revcounter }}">{{a.title}}</a></li>
                 {% endfor %}
             </div>
             <div id="footer">
