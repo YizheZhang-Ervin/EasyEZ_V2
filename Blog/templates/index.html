@@ -5,37 +5,88 @@
     <title>{% block title %}Yizhe(Ervin) Zhang - Home{% endblock %}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="shortcut icon" href="{% static 'img/ez.ico' %}"/>
     <link rel="stylesheet" href="{% static 'css/bootstrap-cover.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/circle.css' %}">
   </head>
-<body class="text-light" style="text-align:center;background:url({% static 'img/covers2.png'%})">
+<body class="text-light" style="text-align:center;background:url({% static 'img/covers2.png'%});overflow:hidden;">
   <div class="d-flex w-100 h-100 p-3 mx-auto flex-column" style="max-width:90%;">
-    <header class="masthead mb-auto">
+    <header class="masthead" style="margin-bottom:20%;">
       <div class="inner">
         <h3 class="masthead-brand">Easy-EZ</h3>
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link active" href="/introduction">Home</a>
-          <a class="nav-link" href="/introduction/#p6">Contact</a>
-          <a class="nav-link" href="/pfas">Tools</a>
+          <a class="nav-link active" href="#" onclick="display()">Menu</a>
+<!--          <a class="nav-link" href="/introduction/#p6">Contact</a>-->
+<!--          <a class="nav-link" href="https://bea-analysis.herokuapp.com/">BEA-GVS</a>-->
         </nav>
       </div>
     </header>
-
     <main role="main" class="inner cover container">
       <div class="row">
+        <div class="col-6"></div>
         <div class="col-6">
-        </div>
-        <div class="col-6">
-          <h1 class="cover-heading">Hi, I am Yizhe Zhang</h1>
-          <p class="lead">Welcome to my Personal Website. Have a nice day!</p>
-          <p class="lead">
-            <a href="/introduction" class="btn btn-lg btn-dark">Enter my Website>></a>
-          </p>
+            <!-- Title -->
+            <div id="title001">
+              <h1 class="cover-heading">Hi, I am Yizhe Zhang</h1>
+              <p class="lead">Welcome to my Personal Website. Have a nice day!</p>
+              <p class="lead">
+                <a href="/introduction" class="btn btn-lg btn-dark">Enter my Website>></a>
+              </p>
+            </div>
+            <!-- circle -->
+            <div id="circle001" class="navigation-circle" style="display:none;margin-top:-20%;">
+                  <div class="navigation-circle__inner">
+                    <svg class="navigation-circle-svg navigation-circle-svg--opaque" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewbox="0 0 320 320" style="enable-background:new 0 0 320 320;">
+                      <circle cx="160" cy="160" r="158" fill="none" stroke-width="1" stroke="rgb(19,21,34)" stroke-linecap="round" stroke-miterlimit="10" style="stroke-dashoffset:0;stroke-dasharray:none;"></circle>
+                    </svg>
+                    <svg class="navigation-circle-svg navigation-circle-svg--mask" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewbox="0 0 320 320" style="enable-background:new 0 0 320 320;">
+                      <circle id="mask-circle" cx="160" cy="160" r="158" fill="none" stroke-width="2" stroke="rgb(19,21,34)" stroke-linecap="round" stroke-miterlimit="10" style="stroke-dasharray:1005.3088px;"></circle>
+                    </svg>
+                    <ul class="navigation-circle__list">
+                      <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onClick="onClick(1)" onmouseenter="calculateOffset(1)" onMouseLeave="onMouseLeave()" href="/introduction">
+                          <div class="navigation-circle-list-item__meta">
+                            <h3 class="navigation-circle-list-item__title">Blog</h3>
+                            <h4 class="navigation-circle-list-item__subtitle">Learn more about me</h4>
+                          </div></a></li>
+                      <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onClick="onClick(2)" onmouseenter="calculateOffset(2)" onMouseLeave="onMouseLeave()" href="/fullstack">
+                          <div class="navigation-circle-list-item__meta">
+                            <h3 class="navigation-circle-list-item__title">Tech Stack</h3>
+                            <h4 class="navigation-circle-list-item__subtitle">Know my tech skills</h4>
+                          </div></a></li>
+                      <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onClick="onClick(3)" onmouseenter="calculateOffset(3)" onMouseLeave="onMouseLeave()" href="/pfas">
+                          <div class="navigation-circle-list-item__meta">
+                            <h3 class="navigation-circle-list-item__title">Tools</h3>
+                            <h4 class="navigation-circle-list-item__subtitle">Embedded PFAS</h4>
+                          </div></a></li>
+                      <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onClick="onClick(4)" onmouseenter="calculateOffset(4)" onMouseLeave="onMouseLeave()" href="https://github.com/YizheZhang-Ervin">
+                          <div class="navigation-circle-list-item__meta">
+                            <h3 class="navigation-circle-list-item__title">Github</h3>
+                            <h4 class="navigation-circle-list-item__subtitle">View all projects</h4>
+                          </div></a></li>
+                      <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onClick="onClick(5)" onmouseenter="calculateOffset(5)" onMouseLeave="onMouseLeave()" href="https://www.linkedin.com/in/yizhe-zhang/">
+                          <div class="navigation-circle-list-item__meta">
+                            <h3 class="navigation-circle-list-item__title">Linkedin</h3>
+                            <h4 class="navigation-circle-list-item__subtitle">Contact by Linkedin</h4>
+                          </div></a></li>
+                      <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onClick="onClick(6)" onmouseenter="calculateOffset(6)" onMouseLeave="onMouseLeave()" href="mailto:zhang.yizhe@husky.neu.edu?subject=Please%20type%20in%20the%20subject">
+                          <div class="navigation-circle-list-item__meta">
+                            <h3 class="navigation-circle-list-item__title">Email</h3>
+                            <h4 class="navigation-circle-list-item__subtitle">Contact by Email</h4>
+                          </div></a></li>
+                      <li class="navigation-circle-list-item"><a class="navigation-circle-list-item__point" onClick="onClick(7)" onmouseenter="calculateOffset(7)" onMouseLeave="onMouseLeave()" href="https://bea-analysis.herokuapp.com/">
+                          <div class="navigation-circle-list-item__meta">
+                            <h3 class="navigation-circle-list-item__title">BEA-GVS</h3>
+                            <h4 class="navigation-circle-list-item__subtitle">Gold visualization system</h4>
+                          </div></a></li>
+                    </ul>
+                  </div>
+                </div>
         </div>
       </div>
-    </main>
 
+    </main>
     <footer class="mastfoot mt-auto">
       <div class="inner">
         <p>Yizhe(Ervin) Zhang |
@@ -46,5 +97,15 @@
       </div>
     </footer>
   </div>
+  <script>
+  var i =1;
+  var circle001 = document.getElementById("circle001");
+  var title001 = document.getElementById("title001");
+  function display(){
+    if(i%2==1){circle001.style.display = "block";title001.style.display = "none";}
+    if(i%2==0){circle001.style.display = "none";title001.style.display = "block";}
+    i++;}
+  </script>
+<script src="{% static 'js/circle.js' %}"></script>
 </body>
 </html>
