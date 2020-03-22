@@ -5,16 +5,37 @@
 {% block content %}
 <main id="main001" role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top:2%;">
             <div class="col-9">
-                {% for a in article %}
-                    <p>Title:{{a.title}}</p>
-                    <p>Content:{{a.content}}</p>
+                <!-- articles -->
+                {% for item in page %}
+                <div class="bg_article div_article">
+                    <h2 class="center_align">{{item.title}}</h2>
+                    <textarea class="ta_article" readonly>{{item.content}}</textarea>
+                </div>
                 {% endfor %}
+                <div class="indexpart">
+                    {% if page.has_previous %}
+                        <a class="index_article steelblue" href="/article/{{ page.previous_page_number }}">&lt;Previous</a>
+                    {% endif %}
+
+                    {% for index in page.paginator.page_range %}
+                       {% if index == page.number %}
+                            <a class="index_article">{{ index }}</a>
+                       {% else %}
+                           <a class="index_article steelblue" href="/article/{{ index }}">{{ index }}</a>
+                       {% endif %}
+                    {% endfor %}
+
+                    {% if page.has_next %}
+                       <a class="index_article steelblue" href="/article/{{ page.next_page_number }}">Next&gt;</a>
+                    {% endif %}
+                </div>
             </div>
-            <div class="col-3 d-none d-md-block">
-                {% for a in article %}
-                    <li>{{a.title}}</li>
+            <!-- articles list -->
+            <div class="col-3 d-none d-md-block" style="border-left:1px solid black">
+                {% for a in all %}
+                    <li class="li_article steelblue"><a class="steelblue" href="/article/{{ forloop.counter }}">{{a.title}}</a></li>
                 {% endfor %}
             </div>
             <div id="footer">
