@@ -18,6 +18,9 @@
     color:white!important;
 }
 
+.bgc_blue{
+    background-color:rgba(20,32,68,0.9)!important;
+}
 .bgc_white{
     background-color:white!important;
 }
@@ -50,7 +53,7 @@
 }
 
 .bgc_dark{
-    background-color:rgba(0,0,0,0.15)!important;
+    background-color:rgba(20,32,68,0.2)!important;
     color:black!important;
 }
 
