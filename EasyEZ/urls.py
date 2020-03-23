@@ -28,8 +28,8 @@ urlpatterns = [
     path('spa/', views.spa),
     path('excel/', views.excel),
     path('pfas/', views.pfas),
-    # path('article/', views.article),
-    re_path(r'article/(?P<id>\d+)/$', views.article),
+    re_path(r'article/(?P<pid>\d+)/$', views.article),
+    re_path(r'media/$', views.media),
     path('index/', views.index),
     path('', views.index),
 ]

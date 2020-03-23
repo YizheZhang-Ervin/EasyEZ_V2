@@ -74,9 +74,32 @@ def excel(request):
     return render(request, 'spreadsheet_v2.html')
 
 
-def article(request, id):
-    article_list = models.article.objects.all()
-    # return render(request, 'article.html', {'article': article_list})
-    pag = Paginator(article_list, 1)
-    page = pag.page(int(id))
-    return render(request, template_name='article.html', context={'page': page, 'all': article_list})
+def article(request, pid):
+    if request.method == 'GET':
+        article_list = models.article.objects.get_queryset().order_by('nid')
+        # return render(request, 'article.html', {'article': article_list})
+        pag = Paginator(article_list, 1)
+        page = pag.page(int(pid))
+        return render(request, template_name='article.html', context={'page': page, 'all': article_list})
+
+
+def media(request):
+    from bilibili_api import video
+    aid_list = [22382268, 24068564, 24710310]
+    dict_all = {}
+    i = 0
+    for aid in aid_list:
+        dict_single = {}
+        my_video = video.VideoInfo(aid=aid)
+        data = my_video.get_video_info()
+        pic = data['pic']
+        title = data['title']
+        duration = round(data['duration'] / 60, 2)
+        play = 'https://www.bilibili.com/video/av' + str(aid)
+        dict_single['pic'] = pic
+        dict_single['title'] = title
+        dict_single['duration'] = duration
+        dict_single['play'] = play
+        dict_all[i] = dict_single
+        i += 1
+    return render(request, template_name='media.html', context={"dict_all": dict_all})

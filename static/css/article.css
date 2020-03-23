@@ -40,3 +40,14 @@
 .li_article{
     list-style:square inside;
 }
+
+.subtitle_li{
+    text-indent:15%;
+}
+
+.article_listdiv{
+    height:700px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    width:100%;
+}

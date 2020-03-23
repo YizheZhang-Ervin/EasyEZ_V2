@@ -36,7 +36,7 @@
             <!-- articles list -->
             <div class="col-3 d-none d-md-block" style="border-left:1px solid black">
                 {% for a in all reversed %}
-                    <li class="li_article steelblue"><a class="steelblue" href="/article/{{ forloop.revcounter }}">{{a.main_title}}<br>{{a.sub_title}}</a></li>
+                    <li class="li_article steelblue"><a class="steelblue subtitle_li" href="/article/{{ forloop.revcounter }}"><i>{{a.sub_title}}</i></a></li>
                 {% endfor %}
             </div>
             <div id="footer">
