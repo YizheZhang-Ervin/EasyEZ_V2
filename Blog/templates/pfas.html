@@ -9,19 +9,19 @@
             <div class="col-md-9">
                 <br>
                 <p id="typeofchart" style="font-weight:bold;"></p>
-                <embed id="pic1" src="{% static '/pfas/img/1week.png' %}" style="width:70%"/>
-                <embed id="pic2" src="{% static '/pfas/img/2weeks.png' %}" style="width:70%"/>
-                <embed id="pic3" src="{% static '/pfas/img/3weeks.png' %}" style="width:70%"/>
-                <embed id="pic4" src="{% static '/pfas/img/1month.png' %}" style="width:70%"/>
-                <embed id="pic5" src="{% static '/pfas/img/2months.png' %}" style="width:70%"/>
-                <embed id="pic6" src="{% static '/pfas/img/3months.png' %}" style="width:70%"/>
-                <embed id="pic7" src="{% static '/pfas/img/allin_3D.png' %}" style="width:70%" />
-                <embed id="pic8" src="{% static '/pfas/img/allin_animation.gif' %}" style="width:70%;filter:invert(1);"/>
+                <embed class="pfas_embed" id="pic1" src="{% static '/pfas/img/1week.png' %}"/>
+                <embed class="pfas_embed" id="pic2" src="{% static '/pfas/img/2weeks.png' %}"/>
+                <embed class="pfas_embed" id="pic3" src="{% static '/pfas/img/3weeks.png' %}"/>
+                <embed class="pfas_embed" id="pic4" src="{% static '/pfas/img/1month.png' %}"/>
+                <embed class="pfas_embed" id="pic5" src="{% static '/pfas/img/2months.png' %}"/>
+                <embed class="pfas_embed" id="pic6" src="{% static '/pfas/img/3months.png' %}"/>
+                <embed class="pfas_embed" id="pic7" src="{% static '/pfas/img/allin_3D.png' %}"/>
+                <embed class="pfas_embed" id="pic8" src="{% static '/pfas/img/allin_animation.gif' %}" style="filter:invert(1);"/>
                 <hr style="border:1px solid gold;background-color:gold;">
                 <p style="font-size:21px"><b>Today's Gold Prices Here:</b></p>
                 <p style="line-height:40px"><i>(Current Date: {{localtime}} - ASIA/SHANGHAI)</i></p>
                 <p style="line-height:40px"><i>(Last Trading Day: {{goldpricedate}} - ASIA/SHANGHAI)</i></p>
-                <table style="border:2px solid gold" width="370px">
+                <table style="border:2px solid gold" width=60%>
                   <tr>
                     <th style="border: 2px outset rgba(255,215,0,0.7);">Type</th>
                     <th style="border: 2px outset rgba(255,215,0,0.7);">Price</th>

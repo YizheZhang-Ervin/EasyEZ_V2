@@ -104,3 +104,16 @@ p{
 .dropdown-item:focus, .dropdown-item:hover{
     background-color: grey!important;
 }
+
+@media (max-width: 500px) {
+  embed {
+    width:90%!important;
+  }
+  table{
+    width:90%;
+  }
+}
+
+.pfas_embed{
+    width:70%;
+}
