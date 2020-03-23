@@ -103,3 +103,4 @@ def media(request):
         dict_all[i] = dict_single
         i += 1
     return render(request, template_name='media.html', context={"dict_all": dict_all})
+
