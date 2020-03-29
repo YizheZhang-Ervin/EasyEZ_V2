@@ -120,3 +120,24 @@ p{
 .pfas_embed{
     width:70%;
 }
+
+.scroll-auto, .scroll-auto2{
+    overflow:auto;
+}
+
+.scroll-auto::-webkit-scrollbar {
+    width: 0%;
+}
+
+.scroll-auto2::-webkit-scrollbar {
+    width: 0%;
+}
+
+.scroll-auto::-webkit-scrollbar-thumb, .scroll-auto2::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: rgba(20,32,68,0.9)
+}
+.scroll-auto::-webkit-scrollbar-track, .scroll-auto2::-webkit-scrollbar-track {
+    border-radius: 25px;
+    background: beige;
+}
