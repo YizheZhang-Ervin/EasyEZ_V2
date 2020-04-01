@@ -145,3 +145,8 @@ p{
 .color_blue{
     color:steelblue;
 }
+
+.display_cir_ins{
+    display:list-item;
+    list-style:circle inside;
+}
