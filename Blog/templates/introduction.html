@@ -107,8 +107,8 @@
                       <div class="col-md-7 order-md-2">
                           <h2 class="featurette-heading">Summary<span class="text-muted"></span></h2>
                           <hr class="bg-dark" style="border:1px solid">
-                          <p>Software engineer enthusiast with years of learning experience in system design, development, and innovation. Proficient in both Front-end/Back-end web technologies and software design process.</p>
-                          <p>Quick learner, proactive, adaptable, organized and a team player is seeking a Full-Stack Engineer Co-op (Intern) to utilize my technical and interpersonal skills.</p>
+                          <p class="p-origin">Software engineer enthusiast with years of learning experience in system design, development, and innovation. Proficient in both Front-end/Back-end web technologies and software design process.</p>
+                          <p class="p-origin">Quick learner, proactive, adaptable, organized and a team player is seeking a Software Engineer Intern to utilize my technical and interpersonal skills.</p>
                       </div>
                       <div class="col-md-5 order-md-1" style="text-align:center;">
                         <embed src="{% static 'img/summary.png'%}">
@@ -134,24 +134,24 @@
                     <details style="margin:0 auto;">
                         <summary style="font-size:18px;"><strong>Northeastern University, Boston, MA</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;2019 - Present</summary>
                         <a target="_blank" href="https://www.northeastern.edu/"><embed src="{% static 'img/neu.jpg'%}"></a>
-                        <p class="line-short">Master of Science in Information Systems</p>
-                        <p class="line-short">Relevant Courses: Application Engineering, Database, Data Science, Web Design</p>
+                        <p class="line-short p-origin">Master of Science in Information Systems</p>
+                        <p class="line-short p-origin">Relevant Courses: Application Engineering, Database, Data Science, Web Design</p>
                     </details>
                     <br>
                     <details style="margin:0 auto;">
                         <summary style="font-size:18px;"><strong>University of California, Los Angeles, CA</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;2017</summary>
                         <a target="_blank" href="http://www.ucla.edu/"><embed src="{% static 'img/ucla.jpg'%}"></a>
-                        <p class="line-short">Certificate of International Business &amp; Leadership Management</p>
-                        <p class="line-short">Relevant Courses: Application Engineering, Database, Data Science, Web Design</p>
+                        <p class="line-short p-origin">Certificate of International Business &amp; Leadership Management</p>
+                        <p class="line-short p-origin">Relevant Courses: Application Engineering, Database, Data Science, Web Design</p>
                     </details>
                     <br>
                     <details style="margin:0 auto;">
                         <summary style="font-size:18px;"><strong>Nantong University, Nantong, Jiangsu, China</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;2015 - 2019</summary>
                         <a target="_blank" href="http://www.ntu.edu.cn/"><embed src="{% static 'img/ntu.jpg'%}"></a>
-                        <p class="line-short">Bachelor of Management in Information Management and Information System</p>
-                        <p class="line-short"><b>Computer Science Courses:</b> Oracle, Software Engineering, Data Structure, Computer Network, Operating System</p>
-                        <p class="line-short"><b>Economics Courses:</b> Economics, Information Economics, Information Analysis, financial management, Accountancy</p>
-                        <p class="line-short"><b>Data Courses:</b> Database, Data Warehousing and Data Mining, SPSS, Statistics, Information Analysis</p>
+                        <p class="line-short p-origin">Bachelor of Management in Information Management and Information System</p>
+                        <p class="line-short p-origin"><b>Computer Science Courses:</b> Oracle, Software Engineering, Data Structure, Computer Network, Operating System</p>
+                        <p class="line-short p-origin"><b>Economics Courses:</b> Economics, Information Economics, Information Analysis, financial management, Accountancy</p>
+                        <p class="line-short p-origin"><b>Data Courses:</b> Database, Data Warehousing and Data Mining, SPSS, Statistics, Information Analysis</p>
                     </details>
                     <br>
                     <!-- projects -->
@@ -161,10 +161,9 @@
                     <h4>BEA-GVS</h4>
                     <details style="margin:0 auto;">
                         <summary style="font-size:18px;"><b>Gold Visualization System (Mar 2020 - Present) - Tornado</b></summary>
-                        <p>$ Analyzed short-term gold data with Moving average / exponential smoothing directly via Quandl API</p>
-                        <p>$ ETL gold data(2008-Now) and stored in Mysql for long term investment model  </p>
-                        <p>$ Plotted gold data in form of 2D/3D/Animation/DIY Trend Chart</p>
-                        <p>$ Extended the core part of PFAS and improved efficiency by Asynchronous server</p>
+                        <p>$ Applied strong programming competency in visualizing short-term gold price of LBMA (gold) and SHFE (gold futures) through moving average, cleaning and storing long-term gold price in Sqlite Database</p>
+                        <p>$ Depicted and implement customizable 2D / 3D / table / animation sequence diagram</p>
+                        <p>$ Provided embedded plug-ins like mirror,translator for users and python, js, sql back-end consoles for manager</p>
                     </details>
                     <a target="_blank" href="https://bea-analysis.herokuapp.com/"><embed src="{% static 'img/bea-gvs.jpg'%}"></a>
                     <br><br>
@@ -172,18 +171,20 @@
                     <h4>PFAS</h4>
                     <details style="margin:0 auto;">
                         <summary style="font-size:18px;"><b>Personal Website with embedded PFAS (Feb 2020 - Present) - Django</b></summary>
-                        <p>$ Created Django personal website, and embedded Python Financial Analysis System which plots the gold price trend in different forms</p>
-                        <p>$ Built exquisite user interface &amp; front-end by bootstrap, html/css, javascript</p>
-                        <p>$ Already transplanted in<a href="/pfas/"> this website</a> with Mysql by Pythonanywhere Server platform</p>
+                        <p>$ Planned,built and optimized website front-end by bootstrap, html/css/js</p>
+                        <p>$ Constructed blog service with Mysql and Django own back-end management system</p>
+                        <p>$ Managed and maintained plug-ins (email, error routing) via Django built-in services and libs</p>
+                        <p>$ Programmed embedded gold price trend diagrams which based on python data processing libs</p>
                     </details>
                     <a target="_blank" href="/pfas/"><embed src="{% static 'img/pfas.jpg'%}"></a>
                     <br><br>
                     <!--6-->
                     <h4>Home Search</h4>
                     <details style="margin:0 auto;">
-                        <summary style="font-size:18px;"><b>Home Rent App(Jan 2020 - Apr 2020) - Angular, Express</b></summary>
-                        <p>$ Devised overall framework and rent component with CRUD functions of home search app front-end with Angular framework and designed UI by ng-zorro</p>
-                        <p>$ Built RestAPI back-end by Express.js and developed several collections of mongoDB</p>
+                        <summary style="font-size:18px;"><b>Home Rent App(Jan 2020 - Apr 2020) - Angular, Express, MongoDB</b></summary>
+                        <p>$ Produced and host home search app by planning overall framework and function requirements</p>
+                        <p>$ Collaborated with teammates in programming and testing rent, buy ,sell modules</p>
+                        <p>$ Integrated and ensured smooth operation of the restful back-end which utilized express and mongoDB</p>
                     </details>
                     <a target="_blank" href="/pfas/"><embed src="{% static 'img/homesearch.png'%}"></a>
                     <br><br>

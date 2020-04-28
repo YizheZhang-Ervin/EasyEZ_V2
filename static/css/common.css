@@ -94,7 +94,13 @@
 }
 
 p{
-    text-indent:3%;
+    text-indent:-2%;
+    margin-left:2%;
+}
+
+.p-origin{
+    text-indent:0%;
+    margin-left:0%;
 }
 
 .pi{
