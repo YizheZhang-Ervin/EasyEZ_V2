@@ -132,11 +132,11 @@ p{
 }
 
 .scroll-auto::-webkit-scrollbar {
-    width: 0%;
+    width: 1%;
 }
 
 .scroll-auto2::-webkit-scrollbar {
-    width: 0%;
+    width: 1%;
 }
 
 .scroll-auto::-webkit-scrollbar-thumb, .scroll-auto2::-webkit-scrollbar-thumb {
@@ -145,7 +145,7 @@ p{
 }
 .scroll-auto::-webkit-scrollbar-track, .scroll-auto2::-webkit-scrollbar-track {
     border-radius: 25px;
-    background: beige;
+    background: rgba(0,0,0,0.6);
 }
 
 .color_blue{
