@@ -67,12 +67,10 @@
 }
 
 .menu_ul{
-    font-size:20px;
     border-left:1.5px outset grey;
 }
 
 .menu_li{
-    font-size:18px;
     line-height:300%;
     text-indent:10%;
     list-style:square inside;
@@ -108,7 +106,6 @@ p{
     color:rgba(0,0,0,0.4);
     margin-top:0px;
     margin-bottom:5px;
-    font-size:15px;
 }
 
 .dropdown-item:focus, .dropdown-item:hover{
@@ -157,3 +154,23 @@ p{
     display:list-item;
     list-style:circle inside;
 }
+
+.sp-1{
+    text-indent:1em;
+}
+
+.sp-2{
+    text-indent:2em;
+}
+
+.sp-3{
+    tex-indent:3em;
+}
+
+h1{font-size:2em!important;}
+h2{font-size:1.8em!important;}
+h3{font-size:1.6em!important;}
+h4{font-size:1.4em!important;}
+h5{font-size:1.2em!important;}
+h6{font-size:1.1em!important;}
+

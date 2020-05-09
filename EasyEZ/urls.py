@@ -29,6 +29,7 @@ urlpatterns = [
     path('excel/', views.excel),
     path('pfas/', views.pfas),
     re_path(r'article/(?P<pid>\d+)/$', views.article),
+    path('product/', views.product),
     path('index/', views.index),
     path('', views.index),
 ]

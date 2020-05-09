@@ -1,0 +1,88 @@
+{% extends "header.html" %}
+{% load static %}
+{% block title %}Product Manager{% endblock %}
+
+{% block content %}
+<main class="container col-md-10 ml-sm-auto col-lg-10 px-4">
+    <div class="row" style="margin-top:2%;">
+        <div class="col-md-9">
+            {% include 'pm.html' %}
+        </div>
+        <div class="col-3 d-none d-md-block steelblue" style="border-left:1px solid black">
+                <!-- thinking-->
+                <p class="m-0"><b>Thinking</b></p><hr class="m-0">
+                <details>
+                    <summary>Internet Era</summary>
+                    <p class="sp-1">Internet Development</p>
+                    <p class="sp-1">Internet of Thinking</p>
+                </details>
+                <details>
+                    <summary>Business Model</summary>
+                    <p class="sp-1">Model</p>
+                    <p class="sp-1">Canvas</p>
+                    <p class="sp-1">Commercialize vs UX</p>
+                </details>
+
+                <!-- documents -->
+                <p class="m-0"><b>Document</b></p><hr class="m-0">
+                <details><summary>Analysis Document</summary>
+                    <p class="sp-1">Competitive Analysis</p>
+                    <p class="sp-2">Concepts</p>
+                    <p class="sp-2">BRD/MRD/PRD</p>
+                    <p class="sp-2">Flow Chart</p>
+                    <p class="sp-1">Data Analysis</p>
+                    <p class="sp-2">Concepts</p>
+                    <p class="sp-2">Product Index</p>
+                </details>
+                <details><summary>Requirement Mgt Document</summary>
+                    <p class="sp-1">Customer Requirements</p>
+                    <p class="sp-1">Product Requirements</p>
+                </details>
+
+                <!-- product-->
+                <p class="m-0"><b>Product</b></p><hr class="m-0">
+                <details><summary>Positioning</summary></details>
+                <details><summary>Design</summary></details>
+                <details><summary>Experience</summary>
+                    <p class="sp-1">Customer Experience</p>
+                    <p class="sp-1">Product Experience</p>
+                </details>
+                <details>
+                    <summary>Lifecycle</summary>
+                    <p class="sp-1">Product disassembly</p>
+                    <p class="sp-1">Product Timing</p>
+                </details>
+
+                <!-- customer-->
+                <p class="m-0"><b>User</b></p><hr class="m-0">
+                <details><summary>User</summary>
+                    <p class="sp-1">User Consumption</p>
+                    <p class="sp-1">User Scenario</p>
+                    <p class="sp-1">User Portrait</p>
+                </details>
+
+                <!-- other-->
+                <p class="m-0"><b>Others</b></p><hr class="m-0">
+                <details><summary>Product Manager</summary>
+                    <p class="sp-1">Skills</p>
+                    <p class="sp-1">Interview</p>
+                    <p class="sp-1">Strategies</p>
+                </details>
+                <details>
+                    <summary>Product Operation</summary>
+                    <p class="sp-1">Concepts</p>
+                    <p class="sp-1">Product thinking operation</p>
+                </details>
+                <details><summary>Examples</summary></details>
+
+        </div>
+        <div id="footer">
+                <p>Ervin Zhang |
+                    <a style="color:steelblue" target="_blank" href="mailto:zhang.yizhe@husky.neu.edu?subject=Please%20type%20in%20the%20subject">
+                        zhang.yizhe@husky.neu.edu
+                    </a>
+                </p>
+            </div>
+    </div>
+</main>
+{% endblock %}
